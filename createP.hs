@@ -1,0 +1,13 @@
+pizzaType :: String -> String
+pizzaType x = " "
+pizzaSize :: Int -> Int
+pizzaSize k = 0
+
+main :: IO ()
+main = do
+    putStrLn "Please enter the type of your pizza: "
+    xStr <- getLine
+    putStrLn "Now enter the size of your pizza (in cm): "
+    kStr <- getLine
+    let k = read kStr :: Int
+    putStrLn $ "There is your " ++ xStr ++ " with a size " ++ kStr ++ " cm!"
